@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: azure;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+header {
+    height: 100vh;
+    position: relative;
+
+}
+
+nav {
+    z-index: 1;
+    height: 8vh;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-holder {
+    margin-right: 2rem;
+}
+
+.logo {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #D6555D;
+}
+
+
+.hero-back {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.hero-button {
+    left: 50%;
+    display: flex;
+    bottom: 50%;
+    padding: 5rem;
+    position: absolute;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 0 0 25px black;
+    transform: translate(-50%, 50%);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-button h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 black;
+}
+
+.enter {
+    color: azure;
+    margin-top: 1rem;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 2px solid azure;
+    background-color: #D6555D;
+    transition: all ease-in-out 250ms;
+}
+
+.enter:hover {
+    background-color: #85272d;
+    box-shadow: 3px 3px 0 black;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-one {
+    margin-top: 3rem;
+    padding: 3rem 5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.5);
+}
+
+.desc {
+    width: 50%;
+    margin-right: 1.5rem;
+}
+
+.desc h2 {
+    margin-bottom: 1.5rem;
+}
+
+.desc span {
+    word-wrap: break-word;
+    line-height: 1.5rem;
+}
+
+.milky-img {
+    width: 50%;
+}
+
+.milky-img img {
+    width: 100%;
+    border-radius: 15px;
+    transition: all ease-in-out 200ms;
+}
+
+.milky-img img:hover {
+    scale: .95;
+    cursor: pointer;
+}
+
+.section-two {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.section-two h3 {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid #D6555D;
+}
+
+.section-two table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-two table td {
+    width: 50%;
+}
+
+.section-two table,
+tr,
+td,
+th {
+    border: 2px solid azure;
+    border-collapse: collapse;
+}
+
+.section-two img {
+    width: 50%;
+    transition: all ease-in-out 200ms;
+}
+
+.section-two img:hover {
+    scale: 0.9;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-desc {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+    width: 80%;
+}
+
+.about-desc h2 {
+    border-bottom: 2px solid #D6555D;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-bottom: .3rem;
+}
+
+.about-desc span {
+    padding: 0 3rem;
+    word-wrap: break-word;
+    line-height: 1.5rem;
+}
+
+
+#contact {
+    height: 100vh;
+}
+
+.contact-form {
+    margin-top: 12rem;
+    padding: 3rem 5rem;
+    background-color: rgba(134, 39, 45, 0.7);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form h2 {
+    border-bottom: 2px solid #D6555D;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-bottom: .3rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form textarea {
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.contact-form form input {
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.contact-form form input[type=submit] {
+    background-color: #D6555D;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
